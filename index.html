@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ISpyAi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Main container for the quiz -->
+  <div id="quiz-card" class="quiz-card">
+    <!-- Image placeholder -->
+    <div class="quiz-image">
+      <img id="quiz-image" src="" alt="Quiz Image" />
+    </div>
+    
+    <!-- Question text -->
+    <div class="question">
+      <p id="question-text">Is it AI?</p>
+    </div>
+    
+    <!-- True/False Answer Buttons -->
+    <div class="answers">
+      <button class="answer-btn" onclick="checkAnswer(true)">True</button>
+      <button class="answer-btn" onclick="checkAnswer(false)">False</button>
+    </div>
+    
+    <!-- Feedback message -->
+    <div class="feedback">
+      <p id="feedback-message"></p>
+    </div>
+    
+    <!-- Next question button -->
+    <div class="next-button">
+      <button id="next-button" onclick="nextQuestion()" style="display:none;">Next Question</button>
+    </div>
+  </div>
+
+  <!-- Include the JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>
